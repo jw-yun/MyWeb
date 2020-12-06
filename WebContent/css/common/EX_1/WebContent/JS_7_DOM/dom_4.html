@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id="d1" class="c1" type="radio" name="ch" value="ch1" checked="checked">
+	<input id="d2" class="c1" type="radio" name="ch" value="ch2">
+	<input id="d3" class="c1" type="radio" name="ch" value="ch3">
+	<input id="d4" class="c1" type="radio" name="ch" value="ch4">
+	
+	<script type="text/javascript">
+		var d1 = document.getElementById("d1");
+		alert(d1.getAttribute("checked"));
+		
+		var yId = prompt("선택할 ID를 입력하세요");
+		d1=	document.getElementById(yId);
+		d1.setAttribute("checked", "checked")
+
+		//d1부터 d4까지의 value를 콘솔에 출력, 선택자는 class를 사용
+		var c1 = document.getElementsByClassName("c1");
+		for(var i=0; i<c1.length;i++){
+			console.log(c1[i].value);
+			
+		}
+		
+	</script>
+</body>
+</html>

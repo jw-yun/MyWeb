@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//빈 배열 생성
+		var a1 = new Array();//쓰지 말 것을 권장
+		
+		var a2 = [];//권장
+		
+		//데이터가 있는 배열 생성
+		var a3 = [1,2,3];
+		
+		var a4 = ['a','b','c'];
+		
+		//서로 다른 데이터타입도 배열 생성
+		var a5 = [1, 'a', 3.12, true];
+		//a5.push('we');
+	
+		//var temp = a5.pop();
+	    //alert(temp);	
+		
+	    a5.unshift('hi');
+		
+		var i=0;
+		
+		for(i=0; i<a5.length; i++){
+			console.log(a5[i]);
+		}
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var ar = [];	
+	//사람의 인원 수를 입력
+		var num = prompt("인원의 수를 입력하세요");
+		//인원 수만큼 나이를 입력받는다
+		for(var i=0;i<num;i++){
+			var age= prompt("사람의 나이를 입력하세요");
+			ar.push(age);
+			
+		}
+		ar.sort();
+		//콘솔에 나이를 출력한다 나이가 적은 순부터 많은 순으로 출력
+		for(i=0;i<num;i++){
+			
+			console.log(ar[i]);
+			
+		}
+
+		//나이를 출력. 반대로 나이가 많은 순부터 적은순으로
+		ar.reverse();
+		for(i=0;i<num;i++){
+			
+			console.log(ar[i]);
+			
+		}
+	
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

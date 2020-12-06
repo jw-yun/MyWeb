@@ -3,12 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="./css/common/reset.css" rel="stylesheet">
+<link href="./css/common/default.css" rel="stylesheet">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <style type="text/css">
 
-.ta{
-	margin-left: 100px;
-
-}
 .tr1{
 	 color: white;
 	 background-color: black;
@@ -45,18 +53,40 @@
 	text-align: center;
 	color: black;
 	text-decoration: none;
-}
+} 
 
 </style>
 </head>
 <body>
+<header>
+		<div id="header_top">	
+			<div id="header_logo" class="header_me">
+				<a href="/MyWeb/index.html"><img alt="" src="/MyWeb/images/common/logo.jpg"></a>	
+			</div>
+			<nav id="header_menu" class="header_me">
+				<ul>
+					<li><a href="../board/boardlist.html">BOARD</a></li>
+					<li><a href="#">MENU</a></li>
+					<li><a href="#">FRANCHISE</a></li>
+					<li><a href="#">NEWS</a></li>
+					<li><a href="#">STORE</a></li>
+					<li><a href="#">고객문의</a></li>
+				</ul>
+			</nav>
+			<nav id="header_promotion" class="header_me">
+				<img alt="" src="./images/common/fb.jpg">
+				<img alt="" src="./images/common/blog.jpg">
+				<img alt="" src="./images/common/insta.jpg">
+			</nav>
+		</div>		
+	</header>
 	<h1 class="s1">NOTICE</h1>
 	<!-- 게시판 리스트 -->
 	<!-- 제목클릭시 boardselect로 이동 -->
 	<!-- 글쓰기 클릭하면 boardwrite로 이동 -->
 	<a href="boardwrite.html"><input type="button" value="글쓰기"></a>
 	<br>
-	<table class="ta">
+	<table class="table table-hover">
 	<tr class="tr1">
 	<td class="t1">번호</td><td class="t2">제목</td><td class="t3">작성자</td>
 	</tr>
@@ -70,7 +100,10 @@
 	<td class="a1">1</td><td><a class="a2" href="boardselect.html">[안내] SF9 인성, 휘영 출연 웹 드라마 [독고빈은 업뎃중] 방영 일정 안내</a></td><td>관리자</td>
 	</tr>
 	</table>
-	
+	<footer>
+		<div><img alt="" src="/MyWeb/images/common/footer.jpg">
+		</div>
+	</footer>
 	
 	
 </body>

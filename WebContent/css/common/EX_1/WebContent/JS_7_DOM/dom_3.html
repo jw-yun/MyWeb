@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<img id="d1" alt="" src="../images/image2.jpeg">
+	<input id="d2" type="text" name="age" value="test">
+	<script type="text/javascript">
+		var d1 = document.getElementById("d1");
+		console.log(d1.src);
+	
+		var check = confirm("변경할까요?"); // 확인(true), 취소(false)
+		if(check){
+			d1.src="../images/image1.jpeg";
+			}
+		//d2의 속성의 value값을 출력
+		var d2 = document.getElementById("d2");
+		console.log(d2.type);
+		console.log(d2.id);
+		console.log(d2.name);
+		console.log(d2.value);
+		
+		check=confirm("버튼으로 바꾸시겠습니까?");
+		if(check){
+			d2.type="button";
+		}
+		
+		
+		
+		
+	</script>
+
+</body>
+</html>

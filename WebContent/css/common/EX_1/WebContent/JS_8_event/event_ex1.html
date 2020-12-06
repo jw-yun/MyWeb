@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input id="d1" type="text">
+	<select>
+		<option class="c1" value="+" selected="selected">+</option>
+		<option class="c1" value="-">-</option>
+		<option class="c1" value="*">*</option>
+		<option class="c1" value="/">/</option>
+		<option class="c1" value="%">%</option>
+	</select>
+	<input id="d2" type="text">
+	=
+	<input id="d3" type="text">
+	<input type="button" value="Click" onclick="math()">
+
+	<script type="text/javascript">
+		function math(){
+			var d1 = document.getElementById("d1");
+			var d2 = document.getElementById("d2");
+			var d3 = document.getElementById("d3");
+			
+			var tool = document.getElementsByClassName("c1");
+				var tool1=tool.setAttribute("selected","selected");
+			d3.value=d1.value+tool1+d2.value;
+			
+			
+		}
+	</script>
+
+
+
+</body>
+</html>
